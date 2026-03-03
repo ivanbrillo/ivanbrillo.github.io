@@ -2,18 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Honors Student @ Sant’Anna School of Advanced Studies 
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Padua, Italy</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -22,13 +20,17 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Master’s student in Artificial Intelligence and Data Engineering at the University of Pisa and an Honors Student at the Sant’Anna School of Advanced Studies, where I am enrolled in an Advanced Master’s program in Robotics. I have completed all my exams and expect to graduate at the end of July. I hold a Bachelor’s degree in Computer Engineering, summa cum laude, from the University of Padua.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My academic path has been driven by a strong interest in applying artificial intelligence to scientific and healthcare challenges with real-world impact. My background spans AI, including machine learning, deep learning, and computer vision, as well as signal processing and embedded systems. I have gained hands-on experience working in multidisciplinary research environments across medicine, biology, and engineering.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+During my studies, I have contributed to research projects addressing real medical problems. These include interpretable classification of cardiological signals in collaboration with Fondazione Monasterio, and investigations into heart–brain interaction in collaboration with the E. Piaggio Research Center. I have also been actively involved in team-based engineering projects such as Formula Student, where I served as Software Team Lead in my final year, coordinating the development of embedded and control systems.
+
+In the coming months, I will spend four months in Montréal as a Mitacs Globalink Research Award recipient, where I will work on surrogate modeling techniques to replace computationally expensive Gaussian Process updates in current neurostimulation methodologies.
+
+I am particularly interested in the scientific application of AI in high-impact domains, including healthcare, robotics, and complex biological systems. I am always open to research collaborations and interdisciplinary projects aimed at advancing the practical and responsible use of artificial intelligence.
