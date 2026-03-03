@@ -405,7 +405,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
           title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
           description: "",
           section: "News",},{id: "projects-project-1",
