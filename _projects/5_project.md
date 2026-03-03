@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Domain-Adversarial Transformer for R-Peak Detection from EEG
+title: Domain-Adversarial Transformer for R-Peak Detection
 img: assets/img/thesis_cover.png
 importance: 1
 category: research
