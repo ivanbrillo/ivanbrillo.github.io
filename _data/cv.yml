@@ -61,7 +61,7 @@ cv:
         end_date: 2021-07
         score: "100 Cum Laude"
 
-    Experience:
+    Research Experience:
       - company: École Polytechnique de Montréal
         position: Visiting Student (Department of Electrical Engineering)
         location: Montréal, Canada
@@ -99,6 +99,7 @@ cv:
         end_date: 2024-02
         summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
 
+    Work Experience:
       - company: UP caeli via
         position: Computer Engineer - Part Time (24h/week)
         location: Padua, Italy
@@ -113,7 +114,7 @@ cv:
         end_date: 2024-08
         summary: Member of a 50-person university racing team, developing embedded systems (ATmega32/64, TI F2837, Arduino) and C control algorithms for power management, torque vectoring, and regenerative braking.
 
-    Volunteer:
+    Memberships:
       - company: LeadTheFuture
         position: Mentee
         start_date: 2025-10
@@ -158,7 +159,6 @@ cv:
           - European Olympiad of Experimental Science
         date: 2019-03
         awarder: European Olympiad of Experimental Science
-
 
     Skills:
       - name: Programming Languages & Software
