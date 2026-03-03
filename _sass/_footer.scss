@@ -1,35 +1,34 @@
 /*******************************************************************************
  * Footer styles
  ******************************************************************************/
-
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  background-color: #1a1a1a; /* dark background */
   font-size: 0.75rem;
 
   .container {
-    color: var(--global-footer-text-color);
+    color: #e0e0e0; /* light text for contrast */
     padding-top: 9px;
     padding-bottom: 8px;
     text-align: center;
   }
 
   a {
-    color: var(--global-footer-link-color);
-
+    color: #bbbbbb; /* lighter gray links */
     &:hover {
-      color: var(--global-theme-color);
+      color: #00a0dc; /* LinkedIn blue or theme color */
       text-decoration: none;
     }
   }
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 1px solid #333333; /* subtle divider */
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
 
   .container {
     text-align: center;
+    color: #e0e0e0; /* light text */
   }
 }
