@@ -23,7 +23,7 @@ cv:
         area: Artificial Intelligence and Data Engineering
         studyType: MSc
         start_date: 2024-09
-        end_date: Current
+        end_date: present
         score: "30/30"
 
       - institution: Sant'Anna School of Advanced Studies
@@ -31,7 +31,7 @@ cv:
         area: Robotics
         studyType: Master of Advanced Studies
         start_date: 2024-09
-        end_date: Current
+        end_date: present
         score: "30/30"
         highlights:
           - Awarded 2-Year Merit Full Scholarship (top 2% of applicants).
@@ -52,7 +52,7 @@ cv:
         score: "110 Cum Laude"
         highlights:
           - DECAMP Course in Applied Web Application Security (Metropolia UAS, Finland).
-          - Supervisor: E. Menegatti.
+          - "Supervisor: E. Menegatti."
 
       - institution: Scientific High School G.B. Ferrari
         location: Este, Italy
@@ -70,16 +70,16 @@ cv:
         end_date: 2026-06
         summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods.
         highlights:
-          - Supervisor: M. Bonizzato.
+          - "Supervisor: M. Bonizzato."
 
       - company: University of Pisa and Research Center "E. Piaggio"
         position: Student Researcher (Department of Information Engineering)
         location: Pisa, Italy
         start_date: 2025-10
-        end_date: Current
+        end_date: present
         summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization.
         highlights:
-          - Supervisor: M. Cimino.
+          - "Supervisor: M. Cimino."
 
       - company: Sant'Anna School and Monasterio Foundation
         position: Student Researcher (TeCIP Institute)
@@ -88,7 +88,7 @@ cv:
         end_date: 2026-01
         summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review).
         highlights:
-          - Supervisor: C.A. Avizzano.
+          - "Supervisor: C.A. Avizzano."
 
       - company: Sant'Anna School of Advanced Studies
         position: Student Researcher (BioRobotics and TeCIP Institutes)
@@ -96,8 +96,8 @@ cv:
         start_date: 2025-02
         end_date: 2025-10
         highlights:
-          - Explainable classification of tumor-mimicking materials from force/position data. Supervisor C.M. Oddo.
-          - Efficient federated learning via dynamic training-precision adjustment. Supervisor E. Paolini.
+          - "Explainable classification of tumor-mimicking materials from force/position data. Supervisor: C.M. Oddo."
+          - "Efficient federated learning via dynamic training-precision adjustment. Supervisor: E. Paolini."
 
       - company: RFX Consortium and CNR
         position: Internship and Bachelor Thesis
@@ -106,7 +106,7 @@ cv:
         end_date: 2024-02
         summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW).
         highlights:
-          - Supervisor: V. Antoni.
+          - "Supervisor: V. Antoni."
 
       - company: UP caeli via
         position: Computer Engineer - Part Time (24h/week)
@@ -126,36 +126,32 @@ cv:
       - company: LeadTheFuture
         position: Mentee
         start_date: 2025-10
-        end_date: Current
+        end_date: present
         summary: Acceptance < 15% for leading STEM mentorship
 
       - company: ISSNAF
         position: Mentee
         start_date: 2025-12
-        end_date: Current
+        end_date: present
         summary: Selective mentorship for research opportunities in the US
 
     Awards:
-      - title: '"Mille e una Lode" Merit Awards'
+      - name: '"Mille e una Lode" Merit Awards'
         date: 2022-2024
-        awarder: UniPD
         summary: Scholarships awarded to the top 3% of students (UniPD) 2022-2024
 
-      - title: INPS Scholarships
+      - name: INPS Scholarships
         date: 2018-2024
         summary: National scholarships in recognition of academic excellence
 
-      - title: National Bronze Medal, Physics Olympiad
+      - name: National Bronze Medal, Physics Olympiad
         date: 2021-05
-        awarder: Association Teaching of Physics
 
-      - title: National First Place, Chemistry Olympiad
+      - name: National First Place, Chemistry Olympiad
         date: 2020-06
-        awarder: Italian Chemistry Society
 
-      - title: National Bronze Medal, EUSO
+      - name: National Bronze Medal, EUSO
         date: 2019-03
-        awarder: European Olympiad of Experimental Science
 
     Skills:
       - name: Programming Languages & Software
