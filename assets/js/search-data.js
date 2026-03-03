@@ -406,8 +406,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-explainable-tissue-classification-from-force-position-signals",
-          title: 'Explainable Tissue Classification from Force/Position Signals',
+            },},{id: "projects-tumorous-tissue-classification",
+          title: 'Tumorous Tissue Classification',
           description: "Machine learning pipeline for tumor-mimicking material classification using a robotic biopsy probe",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
