@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Explainable Amyloidosis Detection from ECGs
-description: Transformer-based cardiac amyloidosis classifier with Grad-CAM and Attention Rollout interpretability
+title: Explainable Amyloidosis Detection
 img: assets/img/explainability.png
 importance: 1
 category: research
@@ -38,7 +37,7 @@ The core model is a **mixed ResNet–Spatial Transformer network with skip conne
 To further boost performance, we combined it with a **pure CNN** branch into an ensemble. A final **SVM classifier**, trained on the probability outputs of the two models (rebalanced using ADASYN), performs the definitive classification decision. Key metrics are **F2 score** and **AUC**, chosen to penalise false negatives in this clinical context.
 
 <div class="row justify-content-center mt-3">
-    <div class="col-sm-10">
+    <div class="col-sm-10" style="background-color: white; padding: 8px; border-radius: 4px;">
         {% include figure.liquid loading="eager" path="assets/img/network.png" title="Network architecture: mixed ResNet–Spatial Transformer with skip connections" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
