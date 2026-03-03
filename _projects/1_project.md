@@ -37,7 +37,7 @@ The core model is a **mixed ResNet–Spatial Transformer network with skip conne
 To further boost performance, we combined it with a **pure CNN** branch into an ensemble. A final **SVM classifier**, trained on the probability outputs of the two models (rebalanced using ADASYN), performs the definitive classification decision. Key metrics are **F2 score** and **AUC**, chosen to penalise false negatives in this clinical context.
 
 <div class="row justify-content-center mt-3">
-    <div class="col-sm-10" style="background-color: white; padding: 8px; border-radius: 4px;">
+    <div class="col-sm-10">
         {% include figure.liquid loading="eager" path="assets/img/network.png" title="Network architecture: mixed ResNet–Spatial Transformer with skip connections" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
