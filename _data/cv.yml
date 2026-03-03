@@ -127,20 +127,38 @@ cv:
         summary: Selective mentorship for research opportunities in the US
 
     Awards:
-      - label: '"Mille e una Lode" Merit Awards'
-        details: 2022–2024, top 3% of students of University of Padua
+      - title: '"Mille e una Lode" Merit Awards'
+        authors:
+          - University of Padua
+        date: 2024-07
+        awarder: University of Padua
+        summary: Scholarships awarded to the top 3% of students, received in 2022, 2023, and 2024.
 
-      - label: INPS Scholarships
-        details: 2018–2024, national academic excellence award
+      - title: INPS Scholarships
+        authors:
+          - Italian National Institute of Social Security
+        date: 2024-07
+        awarder: Italian National Institute of Social Security
+        summary: National scholarships in recognition of academic excellence, received annually 2018–2024.
 
-      - label: National Bronze Medal, Physics Olympiad
-        details: 2021, Association for Teaching Physics
+      - title: National Bronze Medal, Physics Olympiad
+        authors:
+          - Association for Teaching Physics
+        date: 2021-05
+        awarder: Association for Teaching Physics
 
-      - label: National First Place, Chemistry Olympiad
-        details: 2020, Italian Chemistry Society
+      - title: National First Place, Chemistry Olympiad
+        authors:
+          - Italian Chemistry Society
+        date: 2020-06
+        awarder: Italian Chemistry Society
 
-      - label: National Bronze Medal, EUSO
-        details: 2019, European Olympiad of Experimental Science
+      - title: National Bronze Medal, EUSO
+        authors:
+          - European Olympiad of Experimental Science
+        date: 2019-03
+        awarder: European Olympiad of Experimental Science
+
 
     Skills:
       - name: Programming Languages & Software
