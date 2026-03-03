@@ -12,10 +12,6 @@ cv:
     - network: LinkedIn
       username: ivan-brillo
 
-  address:
-    city: Pisa
-    countryCode: IT
-
   sections:
     Education:
       - institution: University of Pisa
@@ -62,76 +58,34 @@ cv:
         score: "100 Cum Laude"
 
     Research Experience:
-      entry_type: ExperienceEntry
-      entries:
-      - company: École Polytechnique de Montréal
-        position: Visiting Student (Department of Electrical Engineering)
-        location: Montréal, Canada
-        start_date: 2026-03
-        end_date: 2026-06
-        summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods. Supervisor M. Bonizzato.
+      - label: "Visiting Student — École Polytechnique de Montréal (2026, Montréal)"
+        details: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods. Supervisor M. Bonizzato.
 
-      - company: University of Pisa and Research Center "E. Piaggio"
-        position: Student Researcher (Department of Information Engineering)
-        location: Pisa, Italy
-        start_date: 2025-10
-        end_date: present
-        summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization. Supervisor M. Cimino.
+      - label: "Student Researcher — University of Pisa & Research Center E. Piaggio (2025–present, Pisa)"
+        details: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization. Supervisor M. Cimino.
 
-      - company: Sant'Anna School and Monasterio Foundation
-        position: Student Researcher (TeCIP Institute)
-        location: Pisa, Italy
-        start_date: 2025-09
-        end_date: 2026-01
-        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review). Supervisor C.A. Avizzano.
+      - label: "Student Researcher — Sant'Anna School & Monasterio Foundation, TeCIP Institute (2025–2026, Pisa)"
+        details: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review). Supervisor C.A. Avizzano.
 
-      - company: Sant'Anna School of Advanced Studies
-        position: Student Researcher (BioRobotics and TeCIP Institutes)
-        location: Pisa, Italy
-        start_date: 2025-02
-        end_date: 2025-10
-        highlights:
-          - Explainable classification of tumor-mimicking materials from force/position data (Supervisor C.M. Oddo).
-          - Efficient federated learning via dynamic training-precision adjustment (Supervisor E. Paolini).
+      - label: "Student Researcher — Sant'Anna School of Advanced Studies, BioRobotics & TeCIP Institutes (2025, Pisa)"
+        details: "Explainable classification of tumor-mimicking materials from force/position data (Supervisor C.M. Oddo). Efficient federated learning via dynamic training-precision adjustment (Supervisor E. Paolini)."
 
-      - company: RFX Consortium and CNR
-        position: Internship and Bachelor Thesis
-        location: Padua, Italy
-        start_date: 2023-11
-        end_date: 2024-02
-        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
+      - label: "Internship & Bachelor Thesis — RFX Consortium and CNR (2023–2024, Padua)"
+        details: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
 
     Work Experience:
-      entry_type: ExperienceEntry
-      entries:
-      - company: UP caeli via
-        position: Computer Engineer - Part Time (24h/week)
-        location: Padua, Italy
-        start_date: 2024-03
-        end_date: 2024-07
-        summary: Software integration for drones (QGC and ArduPilot) using C++ and Qt/QML (GeoFencing, RTK and RTSP).
+      - label: "Computer Engineer Part-Time — UP caeli via (2024, Padua)"
+        details: Software integration for drones (QGC and ArduPilot) using C++ and Qt/QML (GeoFencing, RTK and RTSP).
 
-      - company: Formula SAE Team Project
-        position: Embedded Software Developer (+10h/week)
-        location: Padua, Italy
-        start_date: 2022-10
-        end_date: 2024-08
-        summary: Member of a 50-person university racing team, developing embedded systems (ATmega32/64, TI F2837, Arduino) and C control algorithms for power management, torque vectoring, and regenerative braking.
+      - label: "Embedded Software Developer — Formula SAE Team Project (2022–2024, Padua)"
+        details: Member of a 50-person university racing team, developing embedded systems (ATmega32/64, TI F2837, Arduino) and C control algorithms for power management, torque vectoring, and regenerative braking.
 
     Memberships:
-      entry_type: ExperienceEntry
-      entries:
-      - company: LeadTheFuture
-        position: Mentee
-        start_date: 2025-10
-        end_date: present
-        summary: Acceptance < 15% for leading STEM mentorship
+      - label: "LeadTheFuture — Mentee (2025–present)"
+        details: Selective STEM mentorship program, acceptance rate < 15%.
 
-      - company: ISSNAF
-        position: Mentee
-        start_date: 2025-12
-        end_date: present
-        summary: Selective mentorship for research opportunities in the US
+      - label: "ISSNAF — Mentee (2025–present)"
+        details: Selective mentorship for research opportunities in the US.
 
     Awards:
       - title: '"Mille e una Lode" Merit Awards'
@@ -146,7 +100,7 @@ cv:
           - Italian National Institute of Social Security
         date: 2024-07
         awarder: Italian National Institute of Social Security
-        summary: National scholarships in recognition of academic excellence, received annually 2018–2024.
+        summary: National scholarships in recognition of academic excellence, received annually 2018-2024.
 
       - title: National Bronze Medal, Physics Olympiad
         authors:
