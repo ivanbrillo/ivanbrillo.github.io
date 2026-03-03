@@ -65,8 +65,3 @@ Both methods are validated qualitatively with the clinical team, who assessed wh
     Explainability output for an amyloidosis case. Grad-CAM and Attention Rollout highlight the ECG regions driving the classification, validated against clinical expertise.
 </div>
 
----
-
-## Status
-
-The manuscript is currently under review. All experiments were conducted in collaboration with a medical team from the Cardiology Hospital of Pisa to ensure clinical relevance and rigorous evaluation of the explainability outputs.
