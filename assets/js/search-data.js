@@ -411,8 +411,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-plant-calcium-signals-and-vae",
-          title: 'Plant Calcium Signals and VAE',
+            },},{id: "projects-domain-adversarial-transformer-for-r-peak-detection",
+          title: 'Domain-Adversarial Transformer for R-Peak Detection',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
