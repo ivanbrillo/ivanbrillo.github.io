@@ -401,9 +401,9 @@ ninja.data = [{
             },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
           title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
           description: "",
-          section: "News",},{id: "projects-explainable-amyloidosis-detection-from-ecgs",
-          title: 'Explainable Amyloidosis Detection from ECGs',
-          description: "Transformer-based cardiac amyloidosis classifier with Grad-CAM and Attention Rollout interpretability",
+          section: "News",},{id: "projects-explainable-amyloidosis-detection",
+          title: 'Explainable Amyloidosis Detection',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
