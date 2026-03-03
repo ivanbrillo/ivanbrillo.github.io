@@ -9,6 +9,6 @@ email: brilloivan2@gmail.com # your email address
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social:
-  logo: https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg
+  logo: https://latestlogo.com/wp-content/uploads/2023/12/linkedin-blue-square-icon.svg
   title: LinkedIn
   url: https://www.linkedin.com/in/ivan-brillo/
