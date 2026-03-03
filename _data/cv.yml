@@ -1,189 +1,174 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Ivan Brillo
+  label: Computer Engineer / AI & Data Engineering Student
+  email: brilloivan2@gmail.com
+  location: Pisa, Italy
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: MSc student in Artificial Intelligence and Data Engineering with research experience in deep learning, medical image analysis, and embedded systems.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: ivanbrillo
     - network: LinkedIn
-      username: example
+      username: ivan-brillo
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    city: Pisa
+    countryCode: IT
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University of Pisa
+        location: Pisa, Italy
+        area: Artificial Intelligence and Data Engineering
+        studyType: MSc
+        start_date: 2024-09
+        end_date: Current
+        score: "30/30"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Sant'Anna School of Advanced Studies
+        location: Pisa, Italy
+        area: Robotics
+        studyType: Master of Advanced Studies
+        start_date: 2024-09
+        end_date: Current
+        score: "30/30"
         highlights:
-          - Description 1.
-          - Description 2.
+          - Awarded 2-Year Merit Full Scholarship (top 2% of applicants).
+
+      - institution: Budapest University of Technology and Economics
+        location: Budapest, Hungary
+        area: Challenge-based human-inspired computer vision
+        studyType: Seasonal School
+        start_date: 2024-12
+        end_date: 2024-12
+
+      - institution: University of Padua
+        location: Padua, Italy
+        area: Computer Engineering
+        studyType: BSc
+        start_date: 2021-10
+        end_date: 2024-07
+        score: "110 Cum Laude"
+        highlights:
+          - DECAMP Course in Applied Web Application Security (Metropolia UAS, Finland).
+          - Supervisor: E. Menegatti.
+
+      - institution: Scientific High School G.B. Ferrari
+        location: Este, Italy
+        area: Applied Sciences
+        studyType: High School Diploma
+        start_date: 2016-09
+        end_date: 2021-07
+        score: "100 Cum Laude"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: École Polytechnique de Montréal
+        position: Visiting Student (Department of Electrical Engineering)
+        location: Montréal, Canada
+        start_date: 2026-03
+        end_date: 2026-06
+        summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods.
         highlights:
-          - Relativity
-          - Description 2.
+          - Supervisor: M. Bonizzato.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: University of Pisa and Research Center "E. Piaggio"
+        position: Student Researcher (Department of Information Engineering)
+        location: Pisa, Italy
+        start_date: 2025-10
+        end_date: Current
+        summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Supervisor: M. Cimino.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+      - company: Sant'Anna School and Monasterio Foundation
+        position: Student Researcher (TeCIP Institute)
+        location: Pisa, Italy
+        start_date: 2025-09
+        end_date: 2026-01
+        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review).
+        highlights:
+          - Supervisor: C.A. Avizzano.
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+      - company: Sant'Anna School of Advanced Studies
+        position: Student Researcher (BioRobotics and TeCIP Institutes)
+        location: Pisa, Italy
+        start_date: 2025-02
+        end_date: 2025-10
+        highlights:
+          - Explainable classification of tumor-mimicking materials from force/position data. Supervisor C.M. Oddo.
+          - Efficient federated learning via dynamic training-precision adjustment. Supervisor E. Paolini.
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+      - company: RFX Consortium and CNR
+        position: Internship and Bachelor Thesis
+        location: Padua, Italy
+        start_date: 2023-11
+        end_date: 2024-02
+        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW).
+        highlights:
+          - Supervisor: V. Antoni.
+
+      - company: UP caeli via
+        position: Computer Engineer - Part Time (24h/week)
+        location: Padua, Italy
+        start_date: 2024-03
+        end_date: 2024-07
+        summary: Software integration for drones (QGC and ArduPilot) using C++ and Qt/QML (GeoFencing, RTK and RTSP).
+
+      - company: Formula SAE Team Project
+        position: Embedded Software Developer (+10h/week)
+        location: Padua, Italy
+        start_date: 2022-10
+        end_date: 2024-08
+        summary: Member of a 50-person university racing team, developing embedded systems (ATmega32/64, TI F2837, Arduino) and C control algorithms for power management, torque vectoring, and regenerative braking.
 
     Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+      - company: LeadTheFuture
+        position: Mentee
+        start_date: 2025-10
+        end_date: Current
+        summary: Acceptance < 15% for leading STEM mentorship
+
+      - company: ISSNAF
+        position: Mentee
+        start_date: 2025-12
+        end_date: Current
+        summary: Selective mentorship for research opportunities in the US
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: "Mille e una Lode" Merit Awards
+        date: 2022-2024
+        awarder: UniPD
+        summary: Scholarships awarded to the top 3% of students (UniPD) 2022-2024
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: INPS Scholarships
+        date: 2018-2024
+        summary: National scholarships in recognition of academic excellence
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: National Bronze Medal, Physics Olympiad
+        date: 2021-05
+        awarder: Association Teaching of Physics
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - title: National First Place, Chemistry Olympiad
+        date: 2020-06
+        awarder: Italian Chemistry Society
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - title: National Bronze Medal, EUSO
+        date: 2019-03
+        awarder: European Olympiad of Experimental Science
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming Languages & Software
+        keywords: "C++, C, Qt/QML, Arduino, ATmega32/64, TI F2837, QGC, ArduPilot"
+        level: Advanced
+
+      - name: Artificial Intelligence & Machine Learning
+        keywords: "Deep Learning, CNNs, Transformers, Autoencoders, VAEs, Federated Learning, Grad-CAM, Autoregressive Models"
+        level: Advanced
 
     Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Italian
+        summary: Native
 
       - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        summary: C1 (TOEFL IBT 104/120)
