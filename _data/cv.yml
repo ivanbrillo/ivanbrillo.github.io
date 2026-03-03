@@ -52,7 +52,6 @@ cv:
         score: "110 Cum Laude"
         highlights:
           - DECAMP Course in Applied Web Application Security (Metropolia UAS, Finland).
-          - "Supervisor: E. Menegatti."
 
       - institution: Scientific High School G.B. Ferrari
         location: Este, Italy
@@ -68,27 +67,21 @@ cv:
         location: Montréal, Canada
         start_date: 2026-03
         end_date: 2026-06
-        summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods.
-        highlights:
-          - "Supervisor: M. Bonizzato."
+        summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods. Supervisor M. Bonizzato.
 
       - company: University of Pisa and Research Center "E. Piaggio"
         position: Student Researcher (Department of Information Engineering)
         location: Pisa, Italy
         start_date: 2025-10
         end_date: present
-        summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization.
-        highlights:
-          - "Supervisor: M. Cimino."
+        summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization. Supervisor M. Cimino.
 
       - company: Sant'Anna School and Monasterio Foundation
         position: Student Researcher (TeCIP Institute)
         location: Pisa, Italy
         start_date: 2025-09
         end_date: 2026-01
-        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review).
-        highlights:
-          - "Supervisor: C.A. Avizzano."
+        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review). Supervisor C.A. Avizzano.
 
       - company: Sant'Anna School of Advanced Studies
         position: Student Researcher (BioRobotics and TeCIP Institutes)
@@ -96,17 +89,15 @@ cv:
         start_date: 2025-02
         end_date: 2025-10
         highlights:
-          - "Explainable classification of tumor-mimicking materials from force/position data. Supervisor: C.M. Oddo."
-          - "Efficient federated learning via dynamic training-precision adjustment. Supervisor: E. Paolini."
+          - Explainable classification of tumor-mimicking materials from force/position data (Supervisor C.M. Oddo).
+          - Efficient federated learning via dynamic training-precision adjustment (Supervisor E. Paolini).
 
       - company: RFX Consortium and CNR
         position: Internship and Bachelor Thesis
         location: Padua, Italy
         start_date: 2023-11
         end_date: 2024-02
-        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW).
-        highlights:
-          - "Supervisor: V. Antoni."
+        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
 
       - company: UP caeli via
         position: Computer Engineer - Part Time (24h/week)
