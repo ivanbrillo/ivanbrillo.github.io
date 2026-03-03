@@ -35,11 +35,23 @@ EEG signals are routinely contaminated by cardiac artifacts originating from the
 
 The key challenge is **cross-subject generalization**: cardiac artifact morphology varies substantially across individuals due to differences in electrode impedance, head anatomy, and heart position. A model trained on one subject's EEG may fail entirely on another's.
 
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-10">
+        {% include figure.liquid loading="eager" path="assets/img/DT_representation.png" title="Distance Transform of R-peak positions used as regression target" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 ---
 
 ## Dataset and Preprocessing
 
 The study uses simultaneous 128-channel EEG and single-lead ECG recordings from 54 subjects (University of Padova). EEG signals are band-pass filtered in the [5, 22.5] Hz range — the band that maximises SNR for QRS complex detection — segmented into 10-second non-overlapping windows, and Z-scaled per channel. Ground-truth R-peak positions are extracted from the ECG using Pan-Tompkins and validated by experts. Cross-subject generalization is assessed using **Leave-One-Out Cross-Validation (LOOCV)**.
+
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-10">
+        {% include figure.liquid loading="eager" path="assets/img/filtering.png" title="EEG signal before and after band-pass filtering in the [5, 22.5] Hz range" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ---
 
@@ -55,6 +67,12 @@ We systematically benchmarked six architectures from related domains, none of wh
 - **EEGNet** — a compact depthwise-separable CNN used as a lightweight baseline
 
 RPNet and SeizureTransformer achieved the strongest validation F1-scores (~63–64%), with SeizureTransformer also showing competitive timing accuracy (MAE ≈ 0.14 s).
+
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-10">
+        {% include figure.liquid loading="eager" path="assets/img/SeizureTransformer.png" title="SeizureTransformer architecture: hybrid CNN–Transformer U-Net" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ---
 
