@@ -35,7 +35,7 @@ To approximate this complex and noisy mapping, we trained a **beta-VAE** on a da
 At inference time, we encode the **target Ca²⁺ signal** into the same latent space and apply **k-NN** to retrieve the closest training examples. The PAW parameters associated with those neighbours are then used as the recommended production settings — the PAW generated under those conditions, when applied to the plant, should induce a signal closely resembling the target.
 
 <div class="row justify-content-center mt-3">
-    <div class="col-sm-10" style="background-color: white; padding: 8px; border-radius: 4px;">
+    <div class="col-sm-10">
         {% include figure.liquid loading="eager" path="assets/img/paw_latent.png" title="Beta-VAE latent space and Ca2+ signal reconstruction" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
