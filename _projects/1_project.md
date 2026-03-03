@@ -2,7 +2,7 @@
 layout: page
 title: Explainable Amyloidosis Detection from ECGs
 description: Transformer-based cardiac amyloidosis classifier with Grad-CAM and Attention Rollout interpretability
-img: assets/img/projects/amyloidosis/explainability.png
+img: assets/img/explainability.png
 importance: 1
 category: research
 ---
@@ -39,7 +39,7 @@ To further boost performance, we combined it with a **pure CNN** branch into an 
 
 <div class="row justify-content-center mt-3">
     <div class="col-sm-10">
-        {% include figure.liquid loading="eager" path="assets/img/projects/amyloidosis/network.png" title="Network architecture: mixed ResNet–Spatial Transformer with skip connections" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/network.png" title="Network architecture: mixed ResNet–Spatial Transformer with skip connections" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -59,7 +59,7 @@ Both methods are validated qualitatively with the clinical team, who assessed wh
 
 <div class="row justify-content-center mt-3">
     <div class="col-sm-10">
-        {% include figure.liquid loading="eager" path="assets/img/projects/amyloidosis/explainability.png" title="Explainability: Grad-CAM and Attention Rollout on an amyloidosis ECG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/explainability.png" title="Explainability: Grad-CAM and Attention Rollout on an amyloidosis ECG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
