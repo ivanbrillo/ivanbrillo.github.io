@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Tumorous Tissue Classification
-description: Machine learning pipeline for tumor-mimicking material classification using a robotic biopsy probe
 img: assets/img/biorobotics_results.png
 importance: 2
 category: research
