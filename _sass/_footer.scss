@@ -22,13 +22,13 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid #333333; /* subtle divider */
+  background-color: #1a1a1a; /* ← this was missing */
+  border-top: 1px solid #333333;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
-
   .container {
     text-align: center;
-    color: #e0e0e0; /* light text */
+    color: #e0e0e0;
   }
 }
