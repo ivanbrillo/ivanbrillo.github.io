@@ -1,81 +1,63 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Explainable Tissue Classification from Force/Position Signals
+description: Machine learning pipeline for tumor-mimicking material classification using a robotic biopsy probe
+img: assets/img/biorobotics_results.png
 importance: 2
-category: work
-giscus_comments: true
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-3">
+    <div class="col-sm-8">
+        <p>
+            In collaboration with the <strong>BioRobotics Institute of Scuola Superiore Sant'Anna</strong>,
+            we developed a machine learning pipeline for classifying tissue-mimicking materials using a
+            custom robotic probe equipped with force and position sensors (Massari et al., 2019;
+            Bernardo et al., 2025). The long-term goal is to support intraoperative biopsy decisions
+            by distinguishing tumorous from healthy tissue in real time.
+        </p>
+        <p>
+            The current work uses a custom dataset of five synthetic materials embedded in a silicone
+            vessel to mimic organic tissue properties, providing a controlled testbed before transitioning
+            to real biological samples.
+        </p>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-4 mt-3 mt-sm-0">
+        <a href="https://github.com/ivanbrillo/biorobotics-tissue" target="_blank" class="btn btn-sm z-depth-1 w-100" style="background-color: #24292e; color: white;">
+            <i class="fab fa-github"></i> &nbsp; View on GitHub
+        </a>
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Experimental Setup
+
+The robotic probe integrates force and position sensors to record interaction signals as it scans across the surface of the silicone vessel. Five different materials with distinct mechanical properties are arranged inside, each representing a class to be identified.
+
+Signal preprocessing was critical: raw sensor outputs were highly noisy due to environmental variability (temperature, humidity, probe contact angle). We applied filtering to remove border effects at material transitions, and guided feature engineering by domain literature to extract physically meaningful descriptors characterising each material's mechanical response.
+
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-10">
+        {% include figure.liquid loading="eager" path="assets/img/biorobotics_probe.png" title="Robotic probe with integrated force and position sensors" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The robotic biopsy probe developed at the BioRobotics Institute, equipped with force and position sensors to record tissue interaction signals during scanning.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Classification Pipeline
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+We evaluated classical machine learning techniques across the engineered feature space. To reduce misclassification at material boundaries, we aggregated predictions over multiple consecutive probe measurements before committing to a label. An **ensemble model** combining several classifiers provided the best prototype, achieving strong results on the held-out test set.
+
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-10">
+        {% include figure.liquid loading="eager" path="assets/img/biorobotics_results.png" title="Classification results on the test dataset" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Classification output on the test dataset. The ensemble model reliably distinguishes between the five tissue-mimicking materials across varying experimental conditions.
+</div>
 
-{% endraw %}
