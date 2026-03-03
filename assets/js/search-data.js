@@ -405,10 +405,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
+            },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
           title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
           description: "",
           section: "News",},{id: "projects-project-1",
@@ -485,7 +482,7 @@ ninja.data = [{
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/ivanbrillo", "_blank");
+          window.open("https://www.linkedin.com/in/ivan-brillo/", "_blank");
         },
       },{
       id: 'light-theme',
