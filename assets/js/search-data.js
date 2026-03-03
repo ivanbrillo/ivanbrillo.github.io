@@ -408,7 +408,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-tumorous-tissue-classification",
           title: 'Tumorous Tissue Classification',
-          description: "Machine learning pipeline for tumor-mimicking material classification using a robotic biopsy probe",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
