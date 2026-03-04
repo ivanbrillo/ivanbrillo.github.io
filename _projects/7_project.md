@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NoProp - Diffusion-Based Learning
+title: NoProp Diffusion-Based Learning
 img: assets/img/noprop_architecture.png
 importance: 2
 category: AI projects

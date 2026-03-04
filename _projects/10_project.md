@@ -1,6 +1,6 @@
 ---
 layout: page
-title: QGroundControl — EU Regulatory Extensions
+title: QGC Regulatory Extensions
 img: assets/img/qgc_ui.png
 importance: 2
 category: fun
