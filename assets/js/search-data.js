@@ -401,7 +401,12 @@ ninja.data = [{
             },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
           title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
           description: "",
-          section: "News",},{id: "projects-explainable-amyloidosis-detection",
+          section: "News",},{id: "projects-qgroundcontrol-eu-regulatory-extensions",
+          title: 'QGroundControl — EU Regulatory Extensions',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-explainable-amyloidosis-detection",
           title: 'Explainable Amyloidosis Detection',
           description: "",
           section: "Projects",handler: () => {
