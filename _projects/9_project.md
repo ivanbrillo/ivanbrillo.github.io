@@ -3,7 +3,7 @@ layout: page
 title: BioConnect — Multi-Database Biological Knowledge Platform
 img: assets/img/bioconnect_cover.png
 importance: 4
-category: research
+category: AI projects
 ---
 
 <div class="row mt-3">
