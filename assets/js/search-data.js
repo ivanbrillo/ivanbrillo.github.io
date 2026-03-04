@@ -401,11 +401,16 @@ ninja.data = [{
             },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
           title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
           description: "",
-          section: "News",},{id: "projects-qgroundcontrol-eu-regulatory-extensions",
-          title: 'QGroundControl — EU Regulatory Extensions',
+          section: "News",},{id: "projects-qgc-regulatory-extensions",
+          title: 'QGC Regulatory Extensions',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
+            },},{id: "projects-sign-language-learning-through-ai",
+          title: 'Sign Language Learning Through AI',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project/";
             },},{id: "projects-explainable-amyloidosis-detection",
           title: 'Explainable Amyloidosis Detection',
           description: "",
@@ -437,7 +442,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-noprop-diffusion-based-learning",
-          title: 'NoProp - Diffusion-Based Learning',
+          title: 'NoProp Diffusion-Based Learning',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
@@ -446,8 +451,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-bioconnect-multi-database-biological-knowledge-platform",
-          title: 'BioConnect — Multi-Database Biological Knowledge Platform',
+            },},{id: "projects-biological-knowledge-platform",
+          title: 'Biological Knowledge Platform',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
