@@ -411,6 +411,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project/";
+            },},{id: "projects-vision-and-voice-assistant-on-raspberry",
+          title: 'Vision and Voice Assistant on Raspberry',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_project/";
             },},{id: "projects-explainable-amyloidosis-detection",
           title: 'Explainable Amyloidosis Detection',
           description: "",
