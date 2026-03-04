@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ResNetUNet vs TransUNet
-img: assets/img/transunet.jpg
+img: assets/img/transunet.png
 importance: 1
 category: AI projects
 ---

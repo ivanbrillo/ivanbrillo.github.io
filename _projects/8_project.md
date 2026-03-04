@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Federated Learning Platform
-img: assets/img/federated_cover.png
+img: assets/img/federated_architecture.png
 importance: 3
 category: AI projects
 ---
