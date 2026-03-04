@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BioConnect — Multi-Database Biological Knowledge Platform
-img: assets/img/bioconnect_cover.png
+img: assets/img/bioconnect_neo4j_diseases.png
 importance: 4
 category: AI projects
 ---
