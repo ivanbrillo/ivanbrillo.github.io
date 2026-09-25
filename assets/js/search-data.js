@@ -4,21 +4,21 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
-          description: "Coming soon (fingers crossed 🤞)",
+          title: "Publications",
+          description: "Papers, preprints and talks.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
-          description: "",
+          title: "Projects",
+          description: "Research projects, open-source work and things I have built along the way.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -398,67 +398,82 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-m-starting-my-new-4-month-visiting-student-experience-at-polytechnique-montréal",
-          title: 'I’m starting my new 4-month visiting student experience at Polytechnique Montréal.',
+            },},{id: "news-started-a-4-month-visiting-research-stay-at-mila-scineurotech-lab-polytechnique-montréal-as-a-recipient-of-the-mitacs-globalink-research-scholarship",
+          title: 'Started a 4-month visiting research stay at Mila (sciNeurotech Lab, Polytechnique Montréal) as...',
+          description: "",
+          section: "News",},{id: "news-awarded-the-zegna-scholarship-for-academic-excellence-and-merit",
+          title: 'Awarded the Zegna Scholarship for academic excellence and merit.',
+          description: "",
+          section: "News",},{id: "news-joined-slac-national-accelerator-laboratory-stanford-university-as-a-visiting-scientist-in-the-vernieri-group-building-agentic-ai-for-fcc-detector-design",
+          title: 'Joined SLAC National Accelerator Laboratory (Stanford University) as a Visiting Scientist in the...',
+          description: "",
+          section: "News",},{id: "news-submitted-resctrans-an-explainable-transformer-based-amyloidosis-classifier-from-ecg-signals-to-the-ieee-journal-of-biomedical-and-health-informatics",
+          title: 'Submitted ResCTrans, an explainable Transformer-based amyloidosis classifier from ECG signals, to the IEEE...',
+          description: "",
+          section: "News",},{id: "news-graduated-from-the-msc-in-artificial-intelligence-amp-amp-data-engineering-at-the-university-of-pisa-with-110-cum-laude",
+          title: 'Graduated from the MSc in Artificial Intelligence &amp;amp;amp; Data Engineering at the University...',
+          description: "",
+          section: "News",},{id: "news-presented-ai-driven-optimization-of-detector-design-for-the-fcc-ee-at-the-4th-us-fcc-meeting-at-slac",
+          title: 'Presented AI-driven optimization of detector design for the FCC-ee at the 4th US...',
           description: "",
           section: "News",},{id: "projects-qgc-regulatory-extensions",
           title: 'QGC Regulatory Extensions',
-          description: "",
+          description: "QGroundControl fork extended for EU drone regulations and professional UAV operations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
             },},{id: "projects-sign-language-learning-through-ai",
           title: 'Sign Language Learning Through AI',
-          description: "",
+          description: "ASL finger-spelling tutor with real-time gesture recognition and adaptive feedback.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project/";
             },},{id: "projects-vision-and-voice-assistant-on-raspberry",
           title: 'Vision and Voice Assistant on Raspberry',
-          description: "",
+          description: "Embedded assistant on a Raspberry Pi combining object detection, speech and an LLM.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project/";
             },},{id: "projects-explainable-amyloidosis-detection",
           title: 'Explainable Amyloidosis Detection',
-          description: "",
+          description: "Explainable ResNet–Transformer ensemble that detects cardiac amyloidosis from 6-lead ECGs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-tumorous-tissue-classification",
           title: 'Tumorous Tissue Classification',
-          description: "",
+          description: "Robotic palpation with force/position sensing to tell tumorous from healthy tissue.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-plant-calcium-signals-and-vae",
           title: 'Plant Calcium Signals and VAE',
-          description: "",
+          description: "BSc thesis at CNR/RFX: VAEs on plant calcium signals after plasma-activated water treatment.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-msc-course-notes",
           title: 'MSc Course Notes',
-          description: "Open notes from the MSc in AI and Data Engineering at the University of Pisa",
+          description: "Open, organised notes covering the whole MSc in AI &amp; Data Engineering at the University of Pisa.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-domain-adversarial-transformer-for-r-peak-detection",
           title: 'Domain-Adversarial Transformer for R-Peak Detection',
-          description: "",
+          description: "MSc thesis: detecting cardiac R-peaks directly from multi-channel EEG with a domain-adversarial Transformer.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-resnetunet-vs-transunet",
           title: 'ResNetUNet vs TransUNet',
-          description: "",
+          description: "CNN vs hybrid CNN–Transformer for multi-class nuclei segmentation on PanNuke histology images.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-noprop-diffusion-based-learning",
           title: 'NoProp Diffusion-Based Learning',
-          description: "",
+          description: "PyTorch implementation of NoProp: training networks without backpropagation via local diffusion.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-federated-learning-platform",
           title: 'Federated Learning Platform',
-          description: "",
+          description: "Horizontal federated learning platform for training and monitoring TensorFlow models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-biological-knowledge-platform",
           title: 'Biological Knowledge Platform',
-          description: "",
+          description: "Protein–drug–disease exploration platform built on MongoDB and Neo4j.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{id: "teachings-data-science-fundamentals",
@@ -472,13 +487,6 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/CV_Brillo_Ivan.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -486,11 +494,25 @@ ninja.data = [{
           window.open("mailto:%62%72%69%6C%6C%6F%69%76%61%6E%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/ivan-brillo/", "_blank");
+          window.open("https://github.com/ivanbrillo", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/ivan-brillo", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/CV_Brillo_Ivan.pdf", "_blank");
         },
       },{
       id: 'light-theme',
