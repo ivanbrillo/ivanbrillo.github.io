@@ -4,6 +4,8 @@ title: Explainable Amyloidosis Detection
 img: assets/img/explainability.png
 importance: 1
 category: research
+description: "Explainable ResNet–Transformer ensemble that detects cardiac amyloidosis from 6-lead ECGs."
+tags: [ECG, Transformers, XAI]
 ---
 
 <div class="row mt-3">
@@ -64,4 +66,3 @@ Both methods are validated qualitatively with the clinical team, who assessed wh
 <div class="caption">
     Explainability output for an amyloidosis case. Grad-CAM and Attention Rollout highlight the ECG regions driving the classification, validated against clinical expertise.
 </div>
-

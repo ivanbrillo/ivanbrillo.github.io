@@ -4,6 +4,8 @@ title: Vision and Voice Assistant on Raspberry
 img: assets/img/visionchat_architecture.png
 importance: 3
 category: AI projects
+description: "Embedded assistant on a Raspberry Pi combining object detection, speech and an LLM."
+tags: [Embedded, LLM, Vision]
 ---
 
 <div class="row mt-3">

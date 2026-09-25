@@ -4,6 +4,8 @@ title: Federated Learning Platform
 img: assets/img/federated_architecture.png
 importance: 3
 category: AI projects
+description: "Horizontal federated learning platform for training and monitoring TensorFlow models."
+tags: [Federated learning, Erlang]
 ---
 
 <div class="row mt-3">
@@ -86,9 +88,9 @@ The Spring Boot backend bridges the administrator UI and the Erlang master via J
 
 The system was validated with a 5-node network, each holding a disjoint equal-sized partition of the MNIST dataset. The federated model was compared against a centralized baseline trained on the full dataset.
 
-| Method | Validation Accuracy |
-| :--- | :---: |
-| Centralized Training | 0.9878 |
-| **HFL (5 nodes, FedAvg)** | **0.9859** |
+| Method                    | Validation Accuracy |
+| :------------------------ | :-----------------: |
+| Centralized Training      |       0.9878        |
+| **HFL (5 nodes, FedAvg)** |     **0.9859**      |
 
 The HFL approach achieves accuracy within 0.2% of the centralized baseline, confirming that the FedAvg implementation effectively aggregates distributed knowledge without requiring any data sharing.

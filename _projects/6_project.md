@@ -4,6 +4,8 @@ title: ResNetUNet vs TransUNet
 img: assets/img/transunet.png
 importance: 1
 category: AI projects
+description: "CNN vs hybrid CNN–Transformer for multi-class nuclei segmentation on PanNuke histology images."
+tags: [Segmentation, Medical imaging]
 ---
 
 <div class="row mt-3">

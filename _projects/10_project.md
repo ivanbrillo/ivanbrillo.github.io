@@ -4,6 +4,8 @@ title: QGC Regulatory Extensions
 img: assets/img/qgc_ui.png
 importance: 2
 category: fun
+description: "QGroundControl fork extended for EU drone regulations and professional UAV operations."
+tags: [C++, Qt/QML, Drones]
 ---
 
 <div class="row mt-3">

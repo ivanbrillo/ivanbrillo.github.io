@@ -1,80 +1,167 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+<div class="post home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      {% if page.profile.status %}
+        <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>{{ page.profile.status }}</p>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+      <h1 class="hero-name">
+        {% if site.title == 'blank' %}
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+      </h1>
+      <p class="hero-subtitle">{{ page.subtitle }}</p>
+
+      <div class="hero-bio">{{ content }}</div>
+
+      <div class="hero-actions">
+        {% if site.data.socials.cv_pdf %}
+          <a class="btn-pill btn-pill-primary" href="{{ site.data.socials.cv_pdf | relative_url }}" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-lines"></i> CV
+          </a>
+        {% endif %}
+        {% if site.data.socials.email %}
+          <a class="btn-pill" href="mailto:{{ site.data.socials.email | encode_email }}"> <i class="fa-solid fa-envelope"></i> Email </a>
+        {% endif %}
+        {% if site.data.socials.github_username %}
+          <a class="btn-pill" href="https://github.com/{{ site.data.socials.github_username }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        {% endif %}
+        {% if site.data.socials.linkedin_username %}
+          <a class="btn-pill" href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if page.profile.image %}
+      <div class="hero-photo">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class="hero-img" sizes="(min-width: 992px) 320px, 60vw" alt="Portrait of Ivan Brillo"
+          cache_bust=true
+        %}
+        {% if page.profile.location %}
+          <p class="hero-location"><i class="fa-solid fa-location-dot"></i> {{ page.profile.location }}</p>
         {% endif %}
       </div>
     {% endif %}
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
+  <!-- Highlights -->
+  {% if page.highlights %}
+    <section class="stats">
+      {% for item in page.highlights %}
+        <div class="stat">
+          <span class="stat-value">{{ item.value }}</span>
+          <span class="stat-label">{{ item.label }}</span>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+  <!-- News -->
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-section">
+      <div class="section-head">
+        <h2>News</h2>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
       {% include news.liquid limit=true %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+  <!-- Experience -->
+  {% if page.experience and site.data.cv.cv.sections.Experience %}
+    <section class="home-section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <a class="section-link" href="{{ '/cv/' | relative_url }}">Full CV <i class="fa-solid fa-arrow-right"></i></a>
       </div>
-    {% endif %}
+      <ol class="timeline">
+        {% assign experience_limit = page.experience_limit | default: 100 %}
+        {% for entry in site.data.cv.cv.sections.Experience limit: experience_limit %}
+          <li class="timeline-item">
+            <div class="timeline-date">
+              {{ entry.start_date | append: '-01' | date: '%b %Y' }} –
+              {% if entry.end_date == 'present' %}
+                Present
+              {% else %}
+                {{ entry.end_date | append: '-01' | date: '%b %Y' }}
+              {% endif %}
+            </div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">{{ entry.company }}</h3>
+              <p class="timeline-meta">{{ entry.position }} · {{ entry.location }}</p>
+              {% if entry.summary %}
+                <p class="timeline-summary">{{ entry.summary }}</p>
+              {% endif %}
+              {% if entry.highlights %}
+                <ul class="timeline-summary">
+                  {% for highlight in entry.highlights %}
+                    <li>{{ highlight }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <!-- Selected papers -->
+  {% if page.selected_papers %}
+    <section class="home-section">
+      <div class="section-head">
+        <h2>Publications &amp; talks</h2>
+        <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      {% include selected_papers.liquid %}
+    </section>
+  {% endif %}
+
+  <!-- Featured projects -->
+  {% if page.featured_projects %}
+    <section class="home-section">
+      <div class="section-head">
+        <h2>Featured research</h2>
+        <a class="section-link" href="{{ '/projects/' | relative_url }}">All projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      {% assign featured = site.projects | where: 'category', 'research' | sort: 'importance' %}
+      <div class="projects-grid">
+        {% for project in featured limit: page.featured_projects %}
+          {% include projects.liquid %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Latest posts -->
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <section class="home-section">
+      <div class="section-head">
+        <h2>Latest posts</h2>
+        <a class="section-link" href="{{ '/blog/' | relative_url }}">Blog <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      {% include latest_posts.liquid %}
+    </section>
+  {% endif %}
+
+  <!-- Social -->
+  {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">{% social_links %}</div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+  {% endif %}
 </div>

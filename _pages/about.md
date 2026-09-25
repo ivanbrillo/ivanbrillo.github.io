@@ -1,32 +1,43 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Honors Student @ Sant’Anna School of Advanced Studies 
+subtitle: AI researcher · Visiting Scientist at SLAC, Stanford University
 
 profile:
-  align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Padua, Italy</p>
+  location: Menlo Park, CA · Pisa, Italy
+  status: Visiting Scientist at SLAC through Sep 2026
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+highlights:
+  - value: "110/110"
+    label: cum laude, MSc in AI & Data Engineering
+  - value: "Top 2%"
+    label: full merit scholarship, Sant'Anna
+  - value: "6"
+    label: research groups across Italy, Canada and the US
+
+experience: true # shows the experience timeline from _data/cv.yml
+experience_limit: 5
+
+featured_projects: 3 # number of research projects shown on the home page
+
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: false # contact buttons are shown in the hero instead
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-I’m a Master’s student in Artificial Intelligence & Data Engineering at [University of Pisa](https://www.unipi.it), and an Honors student in Robotics at [Sant'Anna School of Advanced Studies](https://www.santannapisa.it). I hold a BSc in Computer Engineering, summa cum laude, from [University of Padua](https://www.unipd.it).
+I build machine learning methods for science and healthcare. Right now I'm a **Visiting Scientist at [SLAC National Accelerator Laboratory](https://www6.slac.stanford.edu)** (Stanford University) in the Vernieri Group, developing an agentic AI system that automates the optimization and design of particle detectors for the Future Circular Collider (FCC-ee).
 
-I apply AI to high-impact scientific and healthcare problems. My background covers machine learning, deep learning, computer vision, signal processing, and embedded systems, with hands-on research experience in multidisciplinary teams, including research activities with [RFX](https://www.igi.cnr.it/en/rfx/), and collaborations with [Fondazione Monasterio](https://www.monasterio.it) and the [E. Piaggio Research Center](https://www.centropiaggio.unipi.it). I will soon spend four months in Montréal as a recipient of the [Mitacs Globalink Research Award](https://www.mitacs.ca/our-programs/globalink-research-award/) to contribute to research in advanced AI-driven methodologies.
+I recently graduated, _110 cum laude_, from the MSc in Artificial Intelligence & Data Engineering at the [University of Pisa](https://www.unipi.it). I'm also pursuing the Advanced MSc in Robotics at the [Sant'Anna School of Advanced Studies](https://www.santannapisa.it) on a full merit scholarship. Before SLAC, I was a Mitacs Globalink visiting researcher at [Mila](https://mila.quebec), developing CNN surrogates that replace expensive Gaussian Process updates.
 
-Open to research collaborations and interdisciplinary initiatives.
+My work spans surrogate modelling and Bayesian optimization, deep learning for physiological signals (ECG, EEG), explainable AI for clinical applications, and embedded systems. I'm always happy to talk about research collaborations.

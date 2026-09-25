@@ -4,6 +4,8 @@ title: Domain-Adversarial Transformer for R-Peak Detection
 img: assets/img/thesis_cover.png
 importance: 1
 category: research
+description: "MSc thesis: detecting cardiac R-peaks directly from multi-channel EEG with a domain-adversarial Transformer."
+tags: [EEG, Domain adaptation, Transformers]
 ---
 
 <div class="row mt-3">
@@ -22,7 +24,7 @@ category: research
     </div>
     <div class="col-sm-4 mt-3 mt-sm-0">
         <a href="https://github.com/ivanbrillo/EEG-Rpeaks" target="_blank" class="btn btn-sm z-depth-1 w-100" style="background-color: #24292e; color: white;">
-            <i class="fab fa-github"></i> &nbsp; View on GitHub (FinalModels branch)
+            <i class="fab fa-github"></i> &nbsp; View on GitHub
         </a>
     </div>
 </div>

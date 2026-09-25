@@ -1,9 +1,11 @@
 ---
 layout: page
 title: MSc Course Notes
-description: Open notes from the MSc in AI and Data Engineering at the University of Pisa
 importance: 1
 category: fun
+description: "Open, organised notes covering the whole MSc in AI & Data Engineering at the University of Pisa."
+tags: [Notes, Open source]
+icon: book-open
 ---
 
 A collection of notes from my MSc in **Artificial Intelligence and Data Engineering** at the University of Pisa, made publicly available to help fellow students.

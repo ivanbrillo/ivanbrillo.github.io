@@ -1,30 +1,36 @@
-{% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+<footer class="site-footer" role="contentinfo">
+  {% if site.newsletter.enabled %}
+    {% include newsletter.liquid %}
   {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
-{% endcapture %}
 
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
+  <div class="container site-footer-inner">
+    <p class="site-footer-copy">
+      &copy; {{ site.time | date: '%Y' }}
+      {{ site.first_name }}
+      {{ site.middle_name }}
+      {{ site.last_name }}.
+      {{ site.footer_text }}
+      {% if site.impressum_path %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+      {% endif %}
+      {% if site.last_updated %}
+        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
+    </p>
+    <div class="site-footer-links">
+      {% if site.data.socials.email %}
+        <a href="mailto:{{ site.data.socials.email | encode_email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      {% endif %}
+      {% if site.data.socials.github_username %}
+        <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" target="_blank" rel="noopener"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      {% endif %}
+      {% if site.data.socials.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" title="LinkedIn" target="_blank" rel="noopener"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      {% endif %}
     </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="container">
-      {{ footer_contents }}
-    </div>
-  </footer>
-{% endif %}
+  </div>
+</footer>

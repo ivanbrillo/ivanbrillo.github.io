@@ -4,6 +4,8 @@ title: NoProp Diffusion-Based Learning
 img: assets/img/noprop_architecture.png
 importance: 2
 category: AI projects
+description: "PyTorch implementation of NoProp: training networks without backpropagation via local diffusion."
+tags: [PyTorch, Diffusion]
 ---
 
 <div class="row mt-3">
@@ -31,7 +33,7 @@ category: AI projects
 </div>
 
 > **Reference Paper:** NoProp: Training Neural Networks without Back-propagation or Forward-propagation
-> *Qinyu Li, Yee Whye Teh, Razvan Pascanu (2025)* — [arXiv:2503.24322](https://arxiv.org/abs/2503.24322)
+> _Qinyu Li, Yee Whye Teh, Razvan Pascanu (2025)_ — [arXiv:2503.24322](https://arxiv.org/abs/2503.24322)
 
 ---
 
@@ -63,13 +65,13 @@ The key mechanic underlying the whole approach is **gradient detachment**: durin
 
 The model is trained on the **MNIST** dataset (60,000 train samples, 10,000 test samples) with T = 10 diffusion steps, the Adam optimizer (LR: 0.001), and a weighted MSE loss based on the Signal-to-Noise Ratio (SNR). The model achieves high accuracy rapidly:
 
-| Epoch | Avg Loss | Train Accuracy | Test Accuracy |
-| :---: | :------: | :------------: | :-----------: |
-| 1 | 0.5416 | 94.31% | 94.62% |
-| 2 | 0.1529 | 95.98% | 96.11% |
-| 3 | 0.1094 | 97.38% | 97.52% |
-| 4 | 0.0878 | 97.79% | 97.98% |
-| **5** | **0.0717** | **98.15%** | **98.15%** |
+| Epoch |  Avg Loss  | Train Accuracy | Test Accuracy |
+| :---: | :--------: | :------------: | :-----------: |
+|   1   |   0.5416   |     94.31%     |    94.62%     |
+|   2   |   0.1529   |     95.98%     |    96.11%     |
+|   3   |   0.1094   |     97.38%     |    97.52%     |
+|   4   |   0.0878   |     97.79%     |    97.98%     |
+| **5** | **0.0717** |   **98.15%**   |  **98.15%**   |
 
 ---
 
@@ -84,6 +86,7 @@ prediction = classify_batch(x_test, blockNN)
 ```
 
 **File Structure:**
+
 - `NoProp.ipynb` — Main notebook containing the MNIST classification implementation.
 - `NoProp_TimeSeries.ipynb` — Implementation of the Autoencoder for time-series forecasting.
 - `data/` — Directory for datasets (auto-downloaded on first run).

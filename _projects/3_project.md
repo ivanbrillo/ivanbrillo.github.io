@@ -4,6 +4,8 @@ title: Plant Calcium Signals and VAE
 img: assets/img/paw.png
 importance: 3
 category: research
+description: "BSc thesis at CNR/RFX: VAEs on plant calcium signals after plasma-activated water treatment."
+tags: [VAE, Time series, Biology]
 ---
 
 <div class="row mt-3">

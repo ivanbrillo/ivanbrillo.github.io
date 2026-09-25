@@ -1,10 +1,11 @@
 cv:
   name: Ivan Brillo
-  label: Computer Engineer / AI & Data Engineering Student
+  label: AI Researcher · MSc in AI & Data Engineering · Robotics Honors Student
   email: brilloivan2@gmail.com
   location: Pisa, Italy
+  website: https://ivanbrillo.github.io
   image: ""
-  summary: MSc student in Artificial Intelligence and Data Engineering with research experience in deep learning, medical image analysis, and embedded systems.
+  summary: AI researcher working on machine learning for science and healthcare — surrogate modelling and Bayesian optimization, deep learning for physiological signals (ECG, EEG), and explainable AI — with a background in embedded systems.
 
   social_networks:
     - network: GitHub
@@ -14,23 +15,25 @@ cv:
 
   sections:
     Education:
-      - institution: University of Pisa
-        location: Pisa, Italy
-        area: Artificial Intelligence and Data Engineering
-        studyType: MSc
-        start_date: 2024-09
-        end_date: present
-        score: "30/30"
-
       - institution: Sant'Anna School of Advanced Studies
         location: Pisa, Italy
         area: Robotics
-        studyType: Master of Advanced Studies
+        studyType: Advanced MSc (EQF 8)
         start_date: 2024-09
         end_date: present
         score: "30/30"
         highlights:
           - Awarded 2-Year Merit Full Scholarship (top 2% of applicants).
+
+      - institution: University of Pisa
+        location: Pisa, Italy
+        area: Artificial Intelligence and Data Engineering
+        studyType: MSc
+        start_date: 2024-09
+        end_date: 2026-07
+        score: "110 Cum Laude (GPA 29.93/30)"
+        highlights:
+          - 'Thesis: "Development and Evaluation of a Domain-Adversarial Transformer for Subject-Invariant Physiological Signals Analysis". Supervisor M. Cimino.'
 
       - institution: Budapest University of Technology and Economics
         location: Budapest, Hungary
@@ -45,9 +48,10 @@ cv:
         studyType: BSc
         start_date: 2021-10
         end_date: 2024-07
-        score: "110 Cum Laude"
+        score: "110 Cum Laude (GPA 29.84/30)"
         highlights:
           - DECAMP Course in Applied Web Application Security (Metropolia UAS, Finland).
+          - 'Thesis: "A deep learning approach for the analysis of calcium signal in characterizing the biological response of plants to external stimuli". Supervisor E. Menegatti.'
 
       - institution: Scientific High School G.B. Ferrari
         location: Este, Italy
@@ -58,111 +62,131 @@ cv:
         score: "100 Cum Laude"
 
     Experience:
-      - company: École Polytechnique de Montréal
-        position: Visiting Student (Department of Electrical Engineering)
+      - company: SLAC National Accelerator Laboratory (Stanford University)
+        position: Visiting Scientist — Vernieri Group
+        location: Menlo Park, CA, USA
+        start_date: 2026-07
+        end_date: 2026-09
+        summary: Developing an agentic AI system to automate the optimization and design of Future Circular Collider (FCC) particle detectors. Supervisor C. Vernieri.
+
+      - company: Mila — Quebec Artificial Intelligence Institute
+        position: Visiting Researcher — sciNeurotech Lab (Polytechnique Montréal)
         location: Montréal, Canada
         start_date: 2026-03
         end_date: 2026-06
-        summary: Awarded fully-funded Mitacs scholarship to develop CNN surrogates for replacing computationally expensive Gaussian Process updates in neurostimulation methods. Supervisor M. Bonizzato.
+        summary: Developed CNN surrogates to replace computationally expensive online Gaussian Process updates. Funded by a Mitacs Globalink Research Scholarship. Supervisor M. Bonizzato.
 
-      - company: University of Pisa and Research Center "E. Piaggio"
-        position: Student Researcher (Department of Information Engineering)
+      - company: Research Center "E. Piaggio"
+        position: Student Researcher — MLPI Lab
         location: Pisa, Italy
         start_date: 2025-10
-        end_date: present
+        end_date: 2026-07
         summary: Framing R-peak prediction from EEG as a segmentation problem via distance-to-peak estimation, evaluating multi-scale CNNs and autoregressive models with a focus on domain generalization. Supervisor M. Cimino.
 
-      - company: Sant'Anna School and Monasterio Foundation
-        position: Student Researcher (TeCIP Institute)
+      - company: Monasterio Foundation
+        position: Student Researcher — PERCRO Lab
         location: Pisa, Italy
         start_date: 2025-09
         end_date: 2026-01
-        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout (manuscript under review). Supervisor C.A. Avizzano.
+        summary: Cardiac amyloidosis classification from ECGs using Transformers, with interpretability via Grad-CAM and Attention Rollout. Supervisor C.A. Avizzano.
 
       - company: Sant'Anna School of Advanced Studies
-        position: Student Researcher (BioRobotics and TeCIP Institutes)
+        position: Student Researcher — NeuroRobotic Touch Lab and TeCIP Institute
         location: Pisa, Italy
         start_date: 2025-02
         end_date: 2025-10
         highlights:
-          - Explainable classification of tumor-mimicking materials from force/position data (Supervisor C.M. Oddo).
-          - Efficient federated learning via dynamic training-precision adjustment (Supervisor E. Paolini).
-
-      - company: RFX Consortium and CNR
-        position: Internship and Bachelor Thesis
-        location: Padua, Italy
-        start_date: 2023-11
-        end_date: 2024-02
-        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
+          - Explainable classification of tumor-mimicking materials from force/position data. Supervisor C.M. Oddo.
+          - Efficient federated learning via dynamic training-precision adjustment. Supervisor E. Paolini.
 
       - company: UP caeli via
-        position: Computer Engineer - Part Time (24h/week)
+        position: Computer Engineer — Part Time (24h/week)
         location: Padua, Italy
         start_date: 2024-03
         end_date: 2024-07
         summary: Software integration for drones (QGC and ArduPilot) using C++ and Qt/QML (GeoFencing, RTK and RTSP).
 
-      - company: Formula SAE Team Project
+      - company: RFX Consortium and CNR
+        position: Internship — Nuclear Fusion and Plasma Research
+        location: Padua, Italy
+        start_date: 2023-11
+        end_date: 2024-02
+        summary: Investigated autoencoders and VAEs for temporal analysis of plant stress responses after irrigation with plasma-activated water (PAW). Supervisor V. Antoni.
+
+      - company: Formula Student Team Project
         position: Embedded Software Developer (+10h/week)
         location: Padua, Italy
         start_date: 2022-10
         end_date: 2024-08
         summary: Member of a 50-person university racing team, developing embedded systems (ATmega32/64, TI F2837, Arduino) and C control algorithms for power management, torque vectoring, and regenerative braking.
 
+    Publications:
+      - title: AI-Driven Optimization of Detector Design for the FCC-ee
+        publisher: 4th US FCC Meeting, SLAC, Sep. 8–11, 2026
+        date: 2026-09
+        url: https://indico.slac.stanford.edu/event/10213/contributions/15916/
+        summary: Presented research on multifidelity Bayesian optimization and differentiable simulation surrogates for efficient design optimization for the proposed FCC-ee at CERN.
+
+      - title: "ResCTrans: an Explainable Amyloidosis Classifier using Temporal Transformers from ECG Signals"
+        publisher: Submitted to IEEE Journal of Biomedical and Health Informatics, Jul. 9, 2026
+        date: 2026-07
+
     Awards:
+      - title: Zegna Scholarship
+        date: 2026-06
+        awarder: Zegna
+        summary: Scholarship awarded for academic excellence and merit.
+
+      - title: Mitacs Globalink Research Scholarship
+        date: 2026-03
+        awarder: Mitacs
+        summary: Scholarship supporting a visiting research stay at Mila.
+
       - title: '"Mille e una Lode" Merit Awards'
-        authors:
-          - University of Padua
         date: 2024-07
         awarder: University of Padua
         summary: Scholarships awarded to the top 3% of students, received in 2022, 2023, and 2024.
 
       - title: INPS Scholarships
-        authors:
-          - Italian National Institute of Social Security
         date: 2024-07
         awarder: Italian National Institute of Social Security
-        summary: National scholarships in recognition of academic excellence, received annually 2018-2024.
+        summary: National scholarships in recognition of academic excellence, received annually 2018–2024.
 
       - title: National Bronze Medal, Physics Olympiad
-        authors:
-          - Association for Teaching Physics
         date: 2021-05
         awarder: Association for Teaching Physics
 
       - title: National First Place, Chemistry Olympiad
-        authors:
-          - Italian Chemistry Society
         date: 2020-06
         awarder: Italian Chemistry Society
 
       - title: National Bronze Medal, EUSO
-        authors:
-          - European Olympiad of Experimental Science
         date: 2019-03
         awarder: European Olympiad of Experimental Science
 
     Memberships:
-      - label: "LeadTheFuture — Mentee (2025–present)"
+      - label: "LeadTheFuture — Mentee (Oct. 2025–present)"
         details: Selective STEM mentorship program, acceptance rate < 15%.
 
-      - label: "ISSNAF — Mentee (2025–present)"
+      - label: "ISSNAF — Mentee (Dec. 2025–present)"
         details: Selective mentorship for research opportunities in the US.
 
     Skills:
-      - name: Programming Languages & Software
-        keywords: "C++, C, Qt/QML, Arduino, ATmega32/64, TI F2837, QGC, ArduPilot"
-        level: Advanced
+      - name: Machine Learning
+        keywords: "PyTorch, TensorFlow, scikit-learn, Transformers, CNNs, VAEs, Bayesian Optimization, Gaussian Processes, Federated Learning, Explainable AI"
 
-      - name: Artificial Intelligence & Machine Learning
-        keywords: "Deep Learning, CNNs, Transformers, Autoencoders, VAEs, Federated Learning, Grad-CAM, Autoregressive Models"
-        level: Advanced
+      - name: Programming
+        keywords: "Python, C, C++, Java, MATLAB, Erlang, Dart"
 
+      - name: Embedded & Robotics
+        keywords: "Qt/QML, QGroundControl, ArduPilot, Arduino, ATmega32/64, TI F2837"
 
+      - name: Data & Tools
+        keywords: "MongoDB, Neo4j, MySQL, OpenCV, Spring, Flutter, Firebase"
 
     Languages:
       - name: Italian
         summary: Native
 
       - name: English
-        summary: C1 (TOEFL IBT 104/120)
+        summary: C1 (TOEFL iBT 104/120)

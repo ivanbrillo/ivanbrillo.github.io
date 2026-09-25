@@ -4,6 +4,8 @@ title: Tumorous Tissue Classification
 img: assets/img/biorobotics_results.png
 importance: 2
 category: research
+description: "Robotic palpation with force/position sensing to tell tumorous from healthy tissue."
+tags: [Robotics, Haptics, XAI]
 ---
 
 <div class="row mt-3">
@@ -59,4 +61,3 @@ We evaluated classical machine learning techniques across the engineered feature
 <div class="caption">
     Classification output on the test dataset. The ensemble model reliably distinguishes between the five tissue-mimicking materials across varying experimental conditions.
 </div>
-

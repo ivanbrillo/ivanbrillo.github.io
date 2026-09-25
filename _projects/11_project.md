@@ -4,6 +4,8 @@ title: Sign Language Learning Through AI
 img: assets/img/signlearnai_quiz.png
 importance: 5
 category: AI projects
+description: "ASL finger-spelling tutor with real-time gesture recognition and adaptive feedback."
+tags: [Computer vision, Education]
 ---
 
 <div class="row mt-3">

@@ -4,6 +4,8 @@ title: Biological Knowledge Platform
 img: assets/img/bioconnect_neo4j_diseases.png
 importance: 4
 category: AI projects
+description: "Protein–drug–disease exploration platform built on MongoDB and Neo4j."
+tags: [Neo4j, MongoDB, Java]
 ---
 
 <div class="row mt-3">
@@ -62,7 +64,7 @@ The dataset was assembled from three primary sources: **UniProt** for human prot
 
 **MongoDB aggregation pipelines** follow a uniform `$match → $project → $unwind → $group → $sort` structure. The publication trend query filters proteins by pathway, unwinds the publications array, groups by year and type, and returns a chronological count series. The pathway recurrence query uses a case-insensitive regex on the sequence field and groups by pathway name. The expired patents query filters by drug category, retains only patents older than 20 years, and groups by country. All four query families are accelerated by dedicated indexes on `name` (text index, Drug and Protein), `categories` (Drug), and `pathways` (Protein), which reduce execution time from tens of milliseconds to near-zero.
 
-**Neo4j graph queries** cover four patterns. *Drugs targeting similar proteins* traverses `(Drug)–[INHIBITED_BY|ENHANCED_BY]→(Protein)–[SIMILAR_TO]→(Protein p2)` and returns drugs connected to proteins similar to the input. *Shortest path between diseases* uses `allShortestPaths` with a maximum depth of 5, constraining intermediate nodes to be of type `Protein`. *Diseases linked to a drug* follows `(Disease)←[INVOLVED_IN]–(Protein)–[](Drug)` to surface all diseases associated with a drug's target proteins. *Drugs with opposite effects* combines two `UNION` subqueries to find drugs that enhance a protein inhibited by the query drug, and vice versa.
+**Neo4j graph queries** cover four patterns. _Drugs targeting similar proteins_ traverses `(Drug)–[INHIBITED_BY|ENHANCED_BY]→(Protein)–[SIMILAR_TO]→(Protein p2)` and returns drugs connected to proteins similar to the input. _Shortest path between diseases_ uses `allShortestPaths` with a maximum depth of 5, constraining intermediate nodes to be of type `Protein`. _Diseases linked to a drug_ follows `(Disease)←[INVOLVED_IN]–(Protein)–[](Drug)` to surface all diseases associated with a drug's target proteins. _Drugs with opposite effects_ combines two `UNION` subqueries to find drugs that enhance a protein inhibited by the query drug, and vice versa.
 
 <div class="row justify-content-center mt-3">
     <div class="col-sm-10">

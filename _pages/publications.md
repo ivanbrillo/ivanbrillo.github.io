@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Coming soon (fingers crossed 🤞)
+title: Publications
+description: Papers, preprints and talks.
 nav: true
 nav_order: 2
 ---
