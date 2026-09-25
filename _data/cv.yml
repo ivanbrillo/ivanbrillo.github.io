@@ -1,11 +1,9 @@
 cv:
   name: Ivan Brillo
-  label: AI Researcher · MSc in AI & Data Engineering · Robotics Honors Student
+  headline: AI Researcher · MSc in AI & Data Engineering · Robotics Honors Student
   email: brilloivan2@gmail.com
   location: Pisa, Italy
   website: https://ivanbrillo.github.io
-  image: ""
-  summary: AI researcher working on machine learning for science and healthcare — surrogate modelling and Bayesian optimization, deep learning for physiological signals (ECG, EEG), and explainable AI — with a background in embedded systems.
 
   social_networks:
     - network: GitHub
@@ -14,6 +12,9 @@ cv:
       username: ivan-brillo
 
   sections:
+    Summary:
+      - AI researcher working on machine learning for science and healthcare — surrogate modelling and Bayesian optimization, deep learning for physiological signals (ECG, EEG), and explainable AI — with a background in embedded systems.
+
     Education:
       - institution: Sant'Anna School of Advanced Studies
         location: Pisa, Italy
@@ -122,45 +123,64 @@ cv:
 
     Publications:
       - title: AI-Driven Optimization of Detector Design for the FCC-ee
+        authors:
+          - "**Ivan Brillo**"
         publisher: 4th US FCC Meeting, SLAC, Sep. 8–11, 2026
         date: 2026-09
         url: https://indico.slac.stanford.edu/event/10213/contributions/15916/
         summary: Presented research on multifidelity Bayesian optimization and differentiable simulation surrogates for efficient design optimization for the proposed FCC-ee at CERN.
 
       - title: "ResCTrans: an Explainable Amyloidosis Classifier using Temporal Transformers from ECG Signals"
+        authors:
+          - "**Ivan Brillo**"
+          - et al.
         publisher: Submitted to IEEE Journal of Biomedical and Health Informatics, Jul. 9, 2026
         date: 2026-07
 
     Awards:
       - title: Zegna Scholarship
+        authors:
+          - Zegna
         date: 2026-06
         awarder: Zegna
         summary: Scholarship awarded for academic excellence and merit.
 
       - title: Mitacs Globalink Research Scholarship
+        authors:
+          - Mitacs
         date: 2026-03
         awarder: Mitacs
         summary: Scholarship supporting a visiting research stay at Mila.
 
       - title: '"Mille e una Lode" Merit Awards'
+        authors:
+          - University of Padua
         date: 2024-07
         awarder: University of Padua
         summary: Scholarships awarded to the top 3% of students, received in 2022, 2023, and 2024.
 
       - title: INPS Scholarships
+        authors:
+          - Italian National Institute of Social Security
         date: 2024-07
         awarder: Italian National Institute of Social Security
         summary: National scholarships in recognition of academic excellence, received annually 2018–2024.
 
       - title: National Bronze Medal, Physics Olympiad
+        authors:
+          - Association for Teaching Physics
         date: 2021-05
         awarder: Association for Teaching Physics
 
       - title: National First Place, Chemistry Olympiad
+        authors:
+          - Italian Chemistry Society
         date: 2020-06
         awarder: Italian Chemistry Society
 
       - title: National Bronze Medal, EUSO
+        authors:
+          - European Olympiad of Experimental Science
         date: 2019-03
         awarder: European Olympiad of Experimental Science
 
